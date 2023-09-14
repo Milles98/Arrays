@@ -1,4 +1,6 @@
-﻿namespace Arrays
+﻿using System.Globalization;
+
+namespace Arrays
 {
     internal class Program
     {
@@ -31,31 +33,35 @@
             //Du har glömt
             //söndag!Prutt!
 
-            string[] days = { "Måndag", "Tisdag", "Onsdag", "Torsdag", "Fredag", "Lördag" };
+            //string[] days = { "Måndag", "Tisdag", "Onsdag", "Torsdag", "Fredag", "Lördag" };
 
 
-            string[] temp = new string[7];
+            //string[] temp = new string[7];
 
-            int index = 0;
+            //int index = 0;
 
-            foreach (string day in days)
-            {
-                temp[index] = day;
+            //foreach (string day in days)
+            //{
+            //    temp[index] = day;
 
-                if (index == days.Length - 1)
-                {
-                    temp[index + 1] = "Söndag";
-                }
-                index++;
-            }
+            //    if (index == days.Length - 1)
+            //    {
+            //        temp[index + 1] = "Söndag";
+            //    }
+            //    index++;
+            //}
 
-            days = temp;
+            //days = temp;
 
-            foreach (string day in days)
-            {
-                Console.WriteLine(day);
-            }
+            //foreach (string day in days)
+            //{
+            //    Console.WriteLine(day);
+            //}
 
+            //Length övning
+            //int[] numbers = { 1, 2, 3, 4, 5};
+            //int length = numbers.Length;
+            //Console.WriteLine(length);
 
             Console.ReadLine();
         }
