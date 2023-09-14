@@ -25,6 +25,38 @@
             //};
 
 
+            //Övning array
+            //Skapa en string array som heter
+            // days som innehåller 6 dagar(mån - lör)
+            //Du har glömt
+            //söndag!Prutt!
+
+            string[] days = { "Måndag", "Tisdag", "Onsdag", "Torsdag", "Fredag", "Lördag" };
+
+
+            string[] temp = new string[7];
+
+            int index = 0;
+
+            foreach (string day in days)
+            {
+                temp[index] = day;
+
+                if (index == days.Length - 1)
+                {
+                    temp[index + 1] = "Söndag";
+                }
+                index++;
+            }
+
+            days = temp;
+
+            foreach (string day in days)
+            {
+                Console.WriteLine(day);
+            }
+
+
             Console.ReadLine();
         }
     }
