@@ -63,6 +63,16 @@ namespace Arrays
             //int length = numbers.Length;
             //Console.WriteLine(length);
 
+            int[] array = new int[] { 4, 51, -7, 13, -99, 15 };
+            int currentMinimum = Int32.MaxValue;
+
+            for (int index = 0; index < array.Length; index++)
+            {
+                if (array[index] < currentMinimum)
+                    currentMinimum = array[index];
+            }
+
+
             Console.ReadLine();
         }
     }
